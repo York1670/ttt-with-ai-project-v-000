@@ -2,13 +2,13 @@
 
 require_relative '../config/environment'
 
+puts "Hello player. What is your name?"
+name = gets
+puts "Welcome to Tic-Tac-Toe, #{name}."
 
 
 def start
-  puts "What is your name?"
-  name = gets
-  puts "Welcome to Tic-Tac-Toe, #{name}."
-  puts "Who is playing Tic-Tac-Toe? Please choose the players:
+  puts "Who would you like to play the game? Please select:
 
   0 - computer v computer
   1 - player   v computer
