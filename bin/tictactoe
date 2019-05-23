@@ -28,8 +28,10 @@ def start
     Game.new(Players::Computer.new("X"), Players::Computer.new("O"), Board.new).play
   end
   puts "Would you like to play again? (y/n)"
-  start until gets.strip == "n"
-
+  if gets.strip == "n"
+    puts "Good bye"
+  else
+    start
 end
 
 start
